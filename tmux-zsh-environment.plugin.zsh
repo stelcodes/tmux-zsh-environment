@@ -29,5 +29,5 @@ if [ -n "$TMUX" ] && tmux ls >/dev/null 2>/dev/null; then
 
     # Add the function as a precmd, to be run at every new prompt
     autoload -Uz add-zsh-hook
-    add-zsh-hook precmd _zsh_title__preexec
+    add-zsh-hook precmd _tmux_zsh_env__preexec
 fi
